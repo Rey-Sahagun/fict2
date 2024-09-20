@@ -1,20 +1,17 @@
 import React from 'react';
 
 function MyFetchPost() {
-    // Función para realizar un POST con fetch
     function fcnFetchPost() {
         console.log("¡Ejecutando API POST con Fetch!");
 
-        // Declaramos el objeto usuario
         let usuario = {
             nombre: 'Aitana',
             edad: 25
         };
 
-        // Hacemos el POST request con fetch
         fetch('https://reqres.in/api/users', {
             method: 'POST',
-            body: JSON.stringify(usuario), // Datos a enviar
+            body: JSON.stringify(usuario), 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -34,13 +31,13 @@ function MyFetchPost() {
         });
     }
 
-    //*** Código principal ***//
-    // Ejecutar la función que realiza el POST
+
     fcnFetchPost();
 
     return (
         <div>
-            <h1>Fundamentos de promesas y Fetch</h1>
+           
+           <h1>Fundamentos de promesas y Fetch (Post) </h1>
         </div>
     );
 }

@@ -1,18 +1,15 @@
 function MyFetchPut() {
-    // Función para realizar un PUT con fetch
     function fcnFetchPut() {
         console.log("¡Ejecutando API PUT con Fetch!");
 
-        // Declaramos el objeto usuario con los datos a actualizar
         let usuarioActualizado = {
             nombre: 'Aitana',
-            edad: 26 // Cambiamos la edad para simular la actualización
+            edad: 26 
         };
 
-        // Hacemos el PUT request con fetch
-        fetch('https://reqres.in/api/users/2', { // Especificamos el ID del usuario a actualizar
-            method: 'PUT', // Cambiamos el método a PUT
-            body: JSON.stringify(usuarioActualizado), // Datos a enviar
+        fetch('https://reqres.in/api/users/2', { 
+            method: 'PUT', 
+            body: JSON.stringify(usuarioActualizado), 
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -32,13 +29,12 @@ function MyFetchPut() {
         });
     }
 
-    //*** Código principal ***//
-    // Ejecutar la función que realiza el PUT
+
     fcnFetchPut();
 
     return (
         <div>
-            <h1>Programa para realizar PUT con Fetch</h1>
+            <h1>Programa para realizar PUT con Fetch (Put)</h1>
         </div>
     );
 }
