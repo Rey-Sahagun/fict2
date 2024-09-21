@@ -13,3 +13,4 @@ export const useCounter = (inicial = 10) => {
         acumular
     };
 };
+g
